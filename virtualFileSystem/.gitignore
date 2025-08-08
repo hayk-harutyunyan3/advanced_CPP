@@ -1,0 +1,12 @@
+run/obj/*.o
+
+run/run_tests
+run/e_fileSystem
+
+*~
+*.swp
+.DS_Store
+
+run/obj/
+run/*.out
+run/*.exe
