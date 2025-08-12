@@ -10,8 +10,8 @@ TEST(fileTest, test1) {
     // get_dir test
     EXPECT_EQ(file1->get_current_directory(), dir1);
     
-    // get_name test
-    EXPECT_EQ(file1->get_name(), file1_name);
+    // name test
+    EXPECT_EQ(file1->name(), file1_name);
     
     // get_content test
     EXPECT_EQ(file1->get_content(), file1_content); 
@@ -48,8 +48,8 @@ TEST(directoryTest, test2) {
     auto file1 = std::make_shared<File>("file1", file1_content, dir1);
     auto file2 = std::make_shared<File>("file2", file2_content, dir1);
 
-    // get_name test
-    EXPECT_EQ(dir1->get_name(), "dir1");
+    // name test
+    EXPECT_EQ(dir1->name(), "dir1");
 
     // empty dir
     EXPECT_EQ(dir1->get_size(), 0ul);
